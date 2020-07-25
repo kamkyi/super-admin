@@ -1,0 +1,52 @@
+{
+    "name": "rappasoft/laravel-livewire-tables",
+    "description": "A dynamic table component for Laravel Livewire",
+    "keywords": [
+        "rappasoft",
+        "livewire",
+        "datatables",
+        "tables",
+        "laravel"
+    ],
+    "homepage": "https://github.com/rappasoft/laravel-livewire-tables",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Anthony Rappa",
+            "email": "rappa819@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "livewire/livewire": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rappasoft\\LaravelLivewireTables\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rappasoft\\LaravelLivewireTables\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rappasoft\\LaravelLivewireTables\\LivewireTablesServiceProvider"
+            ]
+        }
+    }
+}

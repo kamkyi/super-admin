@@ -1,0 +1,38 @@
+{
+    "name": "jamesmills/laravel-timezone",
+    "license": "MIT",
+    "description": "Timezone storage and retrieval for Laravel",
+    "keywords": [
+        "laravel",
+        "timezone"
+    ],
+    "authors": [
+        {
+            "name": "James Mills",
+            "email": "james@clicksco.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7",
+        "torann/geoip": "^1.0",
+        "nesbot/carbon": "^1.0 || ^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JamesMills\\LaravelTimezone\\": "src/",
+            "JamesMills\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JamesMills\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.12"
+    }
+}
